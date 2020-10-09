@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&family=Roboto+Condensed:wght@300;400;700&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    font-style: normal;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: #21D4FD;
+    background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#user_form h1{
+    text-align: center;
+    color: white;
+    font-size: 3.5rem;
+    font-weight: 400;
+}
+
+#user_form label{
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+#user_form input{
+    width: 45rem;
+    height: 1.35rem;
+    border: none;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    padding-left: 1rem;
+    font-size: 1.2rem;
+    display: block;
+    margin-bottom: 3rem;
+}
+
+#user_form input:focus{
+    outline: none;
+}
+
+#user_form div{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#user_form button{
+    margin: auto;
+    padding: 0.7rem 3.8rem;
+    font-size: 1.15rem;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+    background: white;
+}
+
+#user_form button:hover{
+    color: white;
+    background: #565656;
+}
+
+#success{
+    background-color: #74EBD5;
+    background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+
+#success h1{
+    color: white;
+    font-size: 2.8rem;
+    margin-bottom: 3.7rem;
+    font-weight: 600;
+}
+
+#success h2{
+    color: white;
+    margin-bottom: 1.2rem;
+    font-weight: 400;
+    font-size: 1.6rem;
+}
+
+#success h3{
+    background-color: #ffffff;
+    font-size: 2.5rem;
+    padding: 2rem;
+    margin: 0;
+    margin-bottom: 1.2rem;
+    font-weight: 500;
+}
+
+#success p{
+    margin-bottom: 3.5rem;
+    width: 50vw;
+    color: white;
+    font-size: 1.2rem;
+}
+
+#success button{
+    margin: auto;
+    padding: 0.7rem 3.8rem;
+    font-size: 1.15rem;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+    color: white;
+    background: #8a8a8a;
+}
+
+#success > div > div{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#failed{
+    background-color: #FF9A8B;
+    background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+
+#failed h1{
+    font-size: 3rem;
+}
+
+#failed h2{
+    font-size: 2rem;
+}
+
+#unfound{
+    background-color: #FBAB7E;
+    background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+
+#unfound h1{
+    font-size: 3rem;
+}
+
+#unfound h2{
+    font-size: 2rem;
+}
+
+@media only screen and (max-width: 992px) {
+    body, html {
+        font-size: 85%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    body, html {
+        font-size: 70%;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    body, html {
+        font-size: 60%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    body, html {
+        font-size: 50%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    body, html {
+        font-size: 45%;
+    }
+}

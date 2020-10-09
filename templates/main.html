@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>URL Shortener</title>
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='normalize.css') }}">
+</head>
+<body>
+    <section id="main">
+        <form id="user_form" method="POST">
+            <h1>URL Shortener</h1>
+            <label for="link">Paste In Your URL:</label>
+            <input name="link" id="link" type="url" required>
+            <div>
+                <button>Shorten URL</button>
+            </div>
+        </form>
+    </section>
+</body>
+</html>
