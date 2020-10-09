@@ -1,4 +1,5 @@
-from flask import Flask, render_template, redirect, request
+from flask import Flask, render_template, redirect, request, send_from_directory
+import os
 import pyrebase
 import random
 import string
@@ -18,6 +19,11 @@ config = {
 
 firebase = pyrebase.initialize_app(config)
 db = firebase.database()
+
+@app.route('/favicon.ico')
+def favicon():
+    return send_from_directory(os.path.join(app.root_path, 'static'),
+                               'link-icon.png', mimetype='image/vnd.microsoft.icon')
 
 @app.route('/', methods=["GET", "POST"])
 def main():
