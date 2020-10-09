@@ -18,6 +18,13 @@ a{
     font-style: normal;
 }
 
+span, i{
+    position: relative;
+    font-size: 2.5rem;
+    color: white;
+    z-index: 100;
+}
+
 #main{
     height: 100%;
     width: 100%;
@@ -43,8 +50,8 @@ a{
 }
 
 #user_form input{
-    width: 45rem;
-    height: 1.35rem;
+    width: 60vw;
+    height: 2vw;
     border: none;
     padding-top: 0.8rem;
     padding-bottom: 0.8rem;
@@ -95,7 +102,7 @@ a{
 #success h1{
     color: white;
     font-size: 2.8rem;
-    margin-bottom: 3.7rem;
+    margin-bottom: 3.3rem;
     font-weight: 600;
 }
 
@@ -116,21 +123,14 @@ a{
 }
 
 #success p{
-    margin-bottom: 3.5rem;
-    width: 50vw;
+    margin-bottom: -0.5rem;
+    width: 60vw;
     color: white;
     font-size: 1.2rem;
-}
-
-#success button{
-    margin: auto;
-    padding: 0.7rem 3.8rem;
-    font-size: 1.15rem;
-    border-radius: 50px;
-    outline: none;
-    border: none;
-    color: white;
-    background: #8a8a8a;
+    text-overflow: ellipsis;
+    height: 3rem;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 #success > div > div{
@@ -156,10 +156,12 @@ a{
 
 #failed h1{
     font-size: 3rem;
+    margin-bottom: 1.7rem;
 }
 
 #failed h2{
-    font-size: 2rem;
+    font-size: 1.8rem;
+    margin-top: 0;
 }
 
 #unfound{
@@ -178,38 +180,99 @@ a{
 
 #unfound h1{
     font-size: 3rem;
+    margin-bottom: 1.7rem;
 }
 
 #unfound h2{
-    font-size: 2rem;
+    font-size: 1.8rem;
+    margin-top: 0;
+}
+
+.return{
+    margin: 1.2rem auto auto auto;
+    padding: 0.7rem 3.2rem;
+    font-size: 1.15rem;
+    outline: none;
+    border: 1.5px solid white;
+    color: white;
+    background: transparent;
+}
+
+.return:hover{
+    border: 1.5px solid white;
+    background: white;
+}
+
+#failed .return:hover{
+    color: #FF99AC;
+}
+
+#unfound .return:hover{
+    color: #FBAB7E;
+}
+
+#success .return:hover{
+    color: #7AE2D7;
 }
 
 @media only screen and (max-width: 992px) {
     body, html {
         font-size: 85%;
     }
+    #user_form input {
+        width: 65vw;
+        height: 2.15vw;
+    }
 }
 
 @media only screen and (max-width: 768px) {
     body, html {
-        font-size: 70%;
+        font-size: 80%;
+    }
+    #user_form input{
+        width: 70vw;
+        height: 2.35vw;
+    }
+    #success p{
+        width: 80vw;
+        font-size: 1.5rem;
     }
 }
 
 @media only screen and (max-width: 576px) {
     body, html {
-        font-size: 60%;
+        font-size: 75%;
+    }
+    #success h1{
+        font-size: 2.3rem;
+        margin-bottom: 3.7rem;
+    }
+    #success h2{
+        margin-bottom: 1.2rem;
+        font-size: 1.6rem;
+    }
+    #success h3{
+        font-size: 2.3rem;
+        padding: 2rem;
+        margin-bottom: 1.2rem;
+    }
+    #success p{
+        font-size: 1.5rem;
     }
 }
 
 @media only screen and (max-width: 480px) {
     body, html {
-        font-size: 50%;
+        font-size: 70%;
     }
 }
 
 @media only screen and (max-width: 400px) {
     body, html {
-        font-size: 45%;
+        font-size: 60%;
+    }
+    #success h2{
+        margin-bottom: 1.2rem;
+        font-size: 1.8rem;
     }
 }
